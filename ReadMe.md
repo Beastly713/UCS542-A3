@@ -16,18 +16,18 @@ A clean, responsive, accessible multi-page event site for **TechFest 2025** (Sep
 ├─ gallery.html
 ├─ contact.html
 ├─ /assets
-│ ├─ /css
-│ │ └─ styles.css
-│ └─ /img
-│ ├─ img1.jpg
-│ ├─ img2.jpg
-│ ├─ img3.jpg
-│ ├─ img4.jpg
-│ ├─ img5.jpg
-│ ├─ img6.jpg
-│ ├─ img7.jpg
-│ ├─ img8.jpg
-│ └─ img9.jpg
+│  ├─ /css
+│  │  └─ styles.css
+│  └─ /img
+│     ├─ img1.jpg
+│     ├─ img2.jpg
+│     ├─ img3.jpg
+│     ├─ img4.jpg
+│     ├─ img5.jpg
+│     ├─ img6.jpg
+│     ├─ img7.jpg
+│     ├─ img8.jpg
+│     └─ img9.jpg
 └─ README.md
 
 
