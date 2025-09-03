@@ -8,6 +8,7 @@ A clean, responsive, accessible multi-page event site for **TechFest 2025** (Sep
 
 ## Project Structure
 
+``````
 /
 ├─ index.html
 ├─ events.html
@@ -29,6 +30,7 @@ A clean, responsive, accessible multi-page event site for **TechFest 2025** (Sep
 │     ├─ img8.jpg
 │     └─ img9.jpg
 └─ README.md
+``````
 
 
 ## Pages
