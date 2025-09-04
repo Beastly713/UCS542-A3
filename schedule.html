@@ -7,7 +7,7 @@
   <meta name="description" content="TechFest 2025 schedule and live results for all events held September 12–14, 2025.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body id="schedule">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -42,6 +42,27 @@
       </div>
     </section>
 
+    <!-- New: Audio Guide -->
+    <section id="audio-guide" class="section section-alt" aria-labelledby="audio-heading">
+      <div class="container">
+        <h2 id="audio-heading" class="section-title">Audio Guide</h2>
+        <div class="media-frame">
+          <figure class="media-box">
+            <audio class="audio-embed" controls preload="metadata" aria-label="Welcome message with schedule guidance">
+              <source src="assets/media/welcome.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <figcaption class="hint">A short greeting and guidance for participants on check-ins, venues, and ID requirements.</figcaption>
+          </figure>
+        </div>
+
+        <details class="hint" style="margin-top:.5rem">
+          <summary><strong>Read transcript</strong></summary>
+          <p>"Hello everyone, and a very warm welcome to TechFest 2025 Thapar! We’re thrilled to have you all here for this 24-hour hackathon. Over the next day, you’ll have the chance to innovate, collaborate, and turn your ideas into reality. A quick reminder—our full schedule and resources are available at TechfestThapar.io. Make sure you connect with your mentors, ask questions, and take short breaks to recharge. Most importantly, enjoy the process, learn as much as you can, and don’t be afraid to experiment. Let’s get started, and happy hacking!"</p>
+        </details>
+      </div>
+    </section>
+
     <!-- Schedule table -->
     <section class="section">
       <div class="container">
@@ -69,8 +90,8 @@
                 <td>Check-in opens 09:30; ID required</td>
               </tr>
               <tr>
-                <td><time datetime="2025-03-12">Sept 12</time> → <time datetime="2025-03-13">Sept 13</time></td>
-                <td><time datetime="2025-03-12T10:30">10:30</time>–<time datetime="2025-03-13T10:00">10:00</time></td>
+                <td><time datetime="2025-09-12">Sept 12</time> → <time datetime="2025-09-13">Sept 13</time></td>
+                <td><time datetime="2025-09-12T10:30">10:30</time>–<time datetime="2025-09-13T10:00">10:00</time></td>
                 <td>24-Hour Hackathon</td>
                 <td>Innovation Lab, Block B</td>
                 <td>Main</td>
@@ -85,32 +106,32 @@
                 <td>Results: <em>TBD</em></td>
               </tr>
               <tr>
-                <td><time datetime="2025-03-13">Sept 13</time></td>
-                <td><time datetime="2025-03-13T14:00">14:00</time>–<time datetime="2025-03-13T17:00">17:00</time></td>
+                <td><time datetime="2025-09-13">Sept 13</time></td>
+                <td><time datetime="2025-09-13T14:00">14:00</time>–<time datetime="2025-09-13T17:00">17:00</time></td>
                 <td>Line-Follower Robotics</td>
                 <td>Mechanical Workshop Arena</td>
                 <td>Heats</td>
                 <td>Top 8 advance to finals</td>
               </tr>
               <tr>
-                <td><time datetime="2025-03-13">Sept 13</time></td>
-                <td><time datetime="2025-03-13T18:00">18:00</time>–<time datetime="2025-03-13T22:00">22:00</time></td>
+                <td><time datetime="2025-09-13">Sept 13</time></td>
+                <td><time datetime="2025-09-13T18:00">18:00</time>–<time datetime="2025-09-13T22:00">22:00</time></td>
                 <td>Capture The Flag (CTF)</td>
                 <td>Network Lab</td>
                 <td>Single Round</td>
                 <td>Scoreboard: <em>TBD</em></td>
               </tr>
               <tr>
-                <td><time datetime="2025-03-14">Sept 14</time></td>
-                <td><time datetime="2025-03-14T10:00">10:00</time>–<time datetime="2025-03-14T12:00">12:00</time></td>
+                <td><time datetime="2025-09-14">Sept 14</time></td>
+                <td><time datetime="2025-09-14T10:00">10:00</time>–<time datetime="2025-09-14T12:00">12:00</time></td>
                 <td>Code Golf</td>
                 <td>CS Lab 204</td>
                 <td>Finals</td>
                 <td>🏆 1st: Team ByteMe • 2nd: MinifyMe • 3rd: TinyOps</td>
               </tr>
               <tr>
-                <td><time datetime="2025-03-14">Sept 14</time></td>
-                <td><time datetime="2025-03-14T14:00">14:00</time>–<time datetime="2025-03-14T16:00">16:00</time></td>
+                <td><time datetime="2025-09-14">Sept 14</time></td>
+                <td><time datetime="2025-09-14T14:00">14:00</time>–<time datetime="2025-09-14T16:00">16:00</time></td>
                 <td>Tech Quiz Bowl</td>
                 <td>Auditorium A</td>
                 <td>Prelims → Finals</td>

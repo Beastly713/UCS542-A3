@@ -399,3 +399,17 @@ input:valid, select:valid, textarea:valid { border-color: #16a34a; }
   table, form { border: 1px solid #000 !important; }
   thead th, tbody td { border: 1px solid #000 !important; }
 }
+
+
+/* === Additions for audio styling === */
+.audio-embed {
+  width: 100%;
+  display: block;
+  margin: .25rem 0;
+  /* Attribute + pseudo-class example: emphasize when focused */
+  outline: none;
+}
+.audio-embed:focus-visible {
+  box-shadow: 0 0 0 3px var(--focus);
+  border-radius: var(--radius-sm);
+}
