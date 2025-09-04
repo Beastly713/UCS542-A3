@@ -1,4 +1,3 @@
-<!-- gallery.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
   <meta name="description" content="Photo gallery from TechFest 2025 events and activities.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body id="gallery">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -34,7 +33,7 @@
         <div class="hero-copy">
           <p class="eyebrow">September 12–14, 2025</p>
           <h1>Photo Gallery</h1>
-          <p class="lead">Moments from our hackathon, robotics track, design sprint, and more. </p>
+          <p class="lead">Moments from our hackathon, robotics track, design sprint, and more.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="register.html">Register Now</a>
             <a class="btn btn-outline" href="events.html">Explore Events</a>
@@ -43,56 +42,82 @@
       </div>
     </section>
 
-    <!-- Gallery Grid -->
+    <!-- Gallery Grid (CSS Grid) -->
     <section class="section" aria-labelledby="gallery-heading">
       <div class="container">
         <h2 id="gallery-heading" class="section-title">Highlights</h2>
 
-        <!-- Reuse existing .cards grid (responsive CSS Grid with gap) -->
-        <div class="cards" role="list" aria-label="TechFest 2025 photo gallery">
-          <figure role="listitem" class="card">
-            <img src="assets/img/img1.jpg" alt="Hackathon participants collaborating at their laptops" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Hackathon kickoff — Innovation Lab</figcaption>
+        <div class="gallery-grid" role="list" aria-label="TechFest 2025 photo gallery">
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img1.jpg" aria-label="Open full image: Hackathon kickoff">
+              <img src="assets/img/img1.jpg" alt="Hackathon participants collaborating at their laptops"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Hackathon kickoff — Innovation Lab</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img2.jpg" alt="Robot car navigating a black track line" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Line-Follower Robotics — Heats</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img2.jpg" aria-label="Open full image: Robotics heats">
+              <img src="assets/img/img2.jpg" alt="Robot car navigating a black track line"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Line-Follower Robotics — Heats</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img3.jpg" alt="Student sketching wireframes on a whiteboard" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">UI/UX Design Sprint — Ideation</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img3.jpg" aria-label="Open full image: Design sprint ideation">
+              <img src="assets/img/img3.jpg" alt="Student sketching wireframes on a whiteboard"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>UI/UX Design Sprint — Ideation</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img4.jpg" alt="Team presenting their project on stage" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Project presentations — Auditorium A</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img4.jpg" aria-label="Open full image: Project presentations">
+              <img src="assets/img/img4.jpg" alt="Team presenting their project on stage"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Project presentations — Auditorium A</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img5.jpg" alt="Close-up of code editor with problem statement" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Code Golf — Finals</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img5.jpg" aria-label="Open full image: Code Golf finals">
+              <img src="assets/img/img5.jpg" alt="Close-up of code editor with problem statement"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Code Golf — Finals</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img6.jpg" alt="Participants analyzing network traffic during CTF" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">CTF — Late-night challenge</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img6.jpg" aria-label="Open full image: CTF night challenge">
+              <img src="assets/img/img6.jpg" alt="Participants analyzing network traffic during CTF"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>CTF — Late-night challenge</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img7.jpg" alt="Quiz host with buzzer system on a desk" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Tech Quiz Bowl — Prelims</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img7.jpg" aria-label="Open full image: Tech Quiz Bowl">
+              <img src="assets/img/img7.jpg" alt="Quiz host with buzzer system on a desk"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Tech Quiz Bowl — Prelims</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img8.jpg" alt="Students networking in a campus courtyard" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Community networking — Courtyard</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img8.jpg" aria-label="Open full image: Networking in courtyard">
+              <img src="assets/img/img8.jpg" alt="Students networking in a campus courtyard"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Community networking — Courtyard</figcaption>
           </figure>
 
-          <figure role="listitem" class="card">
-            <img src="assets/img/img9.jpg" alt="Winners holding trophies and certificates" style="max-width:100%;height:auto;display:block;">
-            <figcaption class="hint">Winners’ ceremony — Closing night</figcaption>
+          <figure role="listitem" class="gallery-item">
+            <a class="gallery-link" href="assets/img/img9.jpg" aria-label="Open full image: Winners’ ceremony">
+              <img src="assets/img/img9.jpg" alt="Winners holding trophies and certificates"
+                   loading="lazy" decoding="async">
+            </a>
+            <figcaption>Winners’ ceremony — Closing night</figcaption>
           </figure>
         </div>
 

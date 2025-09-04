@@ -413,3 +413,69 @@ input:valid, select:valid, textarea:valid { border-color: #16a34a; }
   box-shadow: 0 0 0 3px var(--focus);
   border-radius: var(--radius-sm);
 }
+
+
+/* === Gallery Grid enhancements === */
+#gallery .hero { border-bottom: none; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: #000;
+  box-shadow: var(--shadow);
+}
+
+/* Make images responsive and nicely cropped */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+
+/* Subtle zoom on hover/focus for interactivity */
+.gallery-item:hover img,
+.gallery-item:has(.gallery-link:focus-visible) img {
+  transform: scale(1.03);
+}
+
+/* Caption overlay */
+.gallery-item figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: .6rem .75rem;
+  color: #fff;
+  font-size: .95rem;
+  background: linear-gradient(transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.75) 100%);
+}
+
+/* Focus styles for accessibility */
+.gallery-link {
+  display: inline-block;
+  outline: none;
+}
+.gallery-link:focus-visible {
+  box-shadow: 0 0 0 3px var(--focus);
+  border-radius: calc(var(--radius) - 4px);
+}
+
+/* Attribute selector example: emphasize robotics images slightly */
+.gallery-item img[alt*="Robot"],
+.gallery-item img[alt*="Robotics"] {
+  outline: 2px dashed rgba(37,99,235,0.35);
+  outline-offset: -6px;
+}
+
+/* nth-child example for subtle variety (no layout shift) */
+.gallery-item:nth-child(3n) img { aspect-ratio: 16/10; }
+.gallery-item:nth-child(5n) img { aspect-ratio: 1 / 1; }
