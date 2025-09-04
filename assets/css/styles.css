@@ -751,9 +751,6 @@ textarea:placeholder-shown {
 }
 .faq .a p { margin: .5rem 0 0; }
 
-/* Emphasize questions that contain certain words (attribute/pseudo selectors demo) */
-.faq summary .q:has(> span) { /* placeholder for future nested span usage */ }
-.faq summary .q { text-wrap: balance; }
 
 /* Slight accent for first FAQ item */
 .faq-list .faq:first-child {
